@@ -21,9 +21,42 @@
     <ClCompile Include="LocalThresholdFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Task01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task02.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task04.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="abg_corrections.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task05.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LocalThresholdFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ITask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task01.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task02.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task04.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="abg_corrections.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task05.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
