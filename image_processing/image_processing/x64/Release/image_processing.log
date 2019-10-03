@@ -1,0 +1,31 @@
+﻿  image_processing.cpp
+C:\Users\Valmit\source\repos\image_processing\image_processing\image_processing.cpp(42): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Valmit\source\repos\image_processing\image_processing\image_processing.cpp(73): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Valmit\source\repos\image_processing\image_processing\image_processing.cpp(73): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=uint8_t
+          ]
+C:\Users\Valmit\source\repos\image_processing\image_processing\image_processing.cpp(86): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Valmit\source\repos\image_processing\image_processing\image_processing.cpp(88): warning C4267: 'argument': conversion from 'size_t' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\Valmit\source\repos\image_processing\image_processing\image_processing.cpp(89): warning C4267: 'argument': conversion from 'size_t' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\Valmit\source\repos\image_processing\image_processing\image_processing.cpp(100): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Valmit\source\repos\image_processing\image_processing\image_processing.cpp(100): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=uint8_t
+          ]
+  Generating code
+  1 of 80 functions ( 1.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  image_processing.vcxproj -> C:\Users\Valmit\source\repos\image_processing\x64\Release\image_processing.exe
