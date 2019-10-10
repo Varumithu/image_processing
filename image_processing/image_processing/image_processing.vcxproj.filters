@@ -59,5 +59,11 @@
     <ClInclude Include="Task05.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Task06.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task07.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

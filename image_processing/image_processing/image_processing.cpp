@@ -16,7 +16,7 @@
 #include "Task02.h"
 #include "Task04.h"
 #include "Task05.h"
-
+#include "Task06.h"
 
 
 
@@ -29,8 +29,8 @@ int main(int argc, char** argv)
 	//ITask* task = new Task01;
 	//ITask* task = new Task02;
 	//ITask* task = new Task04;
-	ITask* task = new Task05;
-
+	//ITask* task = new Task05;
+	ITask* task = new Task06;
 
 	task->run();
 }
