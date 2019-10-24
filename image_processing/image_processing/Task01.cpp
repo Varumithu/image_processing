@@ -3,7 +3,7 @@
 #include <iostream>
 
 
-void Task01::run()
+void Task01::run() const
 {
 	const cv::Mat image = cv::imread("../cat.bmp", cv::IMREAD_COLOR); // Read the file
 	if (image.empty()) // Check for invalid input

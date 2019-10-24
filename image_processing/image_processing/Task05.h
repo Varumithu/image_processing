@@ -7,6 +7,6 @@ public:
 	Task05() = default;
 	virtual ~Task05() = default;
 
-	void run() override;
+	void run() const override;
 };
 

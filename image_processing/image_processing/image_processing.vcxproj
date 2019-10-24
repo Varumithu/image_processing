@@ -164,7 +164,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="abg_corrections.cpp" />
-    <ClCompile Include="image_processing.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="LocalThresholdFilter.cpp" />
     <ClCompile Include="Task01.cpp" />
     <ClCompile Include="Task02.cpp" />
@@ -181,6 +181,8 @@
     <ClInclude Include="Task05.h" />
     <ClInclude Include="Task06.h" />
     <ClInclude Include="Task07.h" />
+    <ClInclude Include="Task08.h" />
+    <ClInclude Include="Task09.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

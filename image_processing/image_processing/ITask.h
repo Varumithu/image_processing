@@ -12,5 +12,5 @@ class ITask
 public:
 	ITask() = default;
 	virtual ~ITask() = default;
-	virtual void run() = 0;
+	virtual void run() const = 0;
 };

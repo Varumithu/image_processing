@@ -1,7 +1,7 @@
 #include "Task05.h"
 
 
-void Task05::run()
+void Task05::run() const
 {
 	cv::Mat image = cv::imread("../coins.bmp", cv::IMREAD_COLOR);
 	cv::namedWindow("w1", cv::WINDOW_KEEPRATIO); // Create a window for display.

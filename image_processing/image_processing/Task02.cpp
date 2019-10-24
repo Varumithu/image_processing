@@ -1,6 +1,6 @@
 #include "Task02.h"
 
-void Task02::run()
+void Task02::run() const
 {
 	const cv::Mat sonnet = cv::imread("../sonnet.png", cv::IMREAD_GRAYSCALE);
 	cv::Mat filtered;

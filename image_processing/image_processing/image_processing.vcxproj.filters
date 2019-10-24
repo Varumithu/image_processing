@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="image_processing.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LocalThresholdFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,6 +31,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Task05.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -63,6 +63,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Task07.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task08.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task09.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

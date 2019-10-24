@@ -6,6 +6,6 @@ class Task01 final :
 public:
 	Task01() = default;
 	virtual ~Task01() = default;
-	void run() override;
+	void run() const override;
 };
 

@@ -17,8 +17,9 @@
 #include "Task04.h"
 #include "Task05.h"
 #include "Task06.h"
-
-
+#include "Task07.h"
+#include "Task08.h"
+#include "Task09.h"
 
 
 
@@ -30,8 +31,11 @@ int main(int argc, char** argv)
 	//ITask* task = new Task02;
 	//ITask* task = new Task04;
 	//ITask* task = new Task05;
-	ITask* task = new Task06;
-
+	//const auto task = std::make_unique<Task06>();
+	//const auto task = std::make_unique<Task07>();
+	//const auto task = std::make_unique<Task08>();
+	const auto task = std::make_unique<Task09>();
+	
 	task->run();
 }
 

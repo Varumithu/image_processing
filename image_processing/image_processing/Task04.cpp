@@ -26,7 +26,7 @@ cv::Mat get_hist_img(int hist_size, int scale, cv::Mat hist, size_t space_length
 
 
 
-void Task04::run()
+void Task04::run() const
 {
 
 	cv::Mat graycat = cv::imread("../cat.bmp", cv::IMREAD_GRAYSCALE);
