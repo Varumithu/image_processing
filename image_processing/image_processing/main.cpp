@@ -20,6 +20,7 @@
 #include "Task07.h"
 #include "Task08.h"
 #include "Task09.h"
+#include "Task10.h"
 
 
 
@@ -34,7 +35,8 @@ int main(int argc, char** argv)
 	//const auto task = std::make_unique<Task06>();
 	//const auto task = std::make_unique<Task07>();
 	//const auto task = std::make_unique<Task08>();
-	const auto task = std::make_unique<Task09>();
+	//const auto task = std::make_unique<Task09>();
+	const auto task = std::make_unique<Task10>();
 	
 	task->run();
 }

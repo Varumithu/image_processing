@@ -71,5 +71,8 @@
     <ClInclude Include="Task09.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Task10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
