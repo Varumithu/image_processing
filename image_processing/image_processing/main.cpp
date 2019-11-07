@@ -21,26 +21,19 @@
 #include "Task08.h"
 #include "Task09.h"
 #include "Task10.h"
+#include "Task11.h"
+#include "Task12.h"
 
 
-
-
-
-int main(int argc, char** argv)
+int main()
 {
-	//ITask* task = new Task01;
-	//ITask* task = new Task02;
-	//ITask* task = new Task04;
-	//ITask* task = new Task05;
-	//const auto task = std::make_unique<Task06>();
-	//const auto task = std::make_unique<Task07>();
-	//const auto task = std::make_unique<Task08>();
-	//const auto task = std::make_unique<Task09>();
-	const auto task = std::make_unique<Task10>();
 	
-	task->run();
-}
+	const auto task = std::make_unique<Task12>();
 
+	task->run();
+	
+	return 0;
+}
 
 
 

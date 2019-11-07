@@ -170,6 +170,7 @@
     <ClCompile Include="Task02.cpp" />
     <ClCompile Include="Task04.cpp" />
     <ClCompile Include="Task05.cpp" />
+    <ClCompile Include="Task12.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abg_corrections.h" />
@@ -184,6 +185,8 @@
     <ClInclude Include="Task08.h" />
     <ClInclude Include="Task09.h" />
     <ClInclude Include="Task10.h" />
+    <ClInclude Include="Task11.h" />
+    <ClInclude Include="Task12.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
