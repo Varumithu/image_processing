@@ -37,24 +37,32 @@ inline void run_subroutine(int, void*)
 	cv::imshow("image corners", image);
 }
 
-inline void shi_tomasi_subroutine(int, void*)
+inline void shi_tomashi_subroutine(int, void*)
 {
 	cv::Mat image = cv::imread("../building.jpg", cv::IMREAD_GRAYSCALE);
 
 	cv::imshow("image", image);
 	cv::Mat drawable = image.clone();
 	cv::imshow("image", drawable);
-	cv::warpAffine(image, drawable, cv::getRotationMatrix2D({ static_cast<float>(image.cols) / 2, static_cast<float>(image.rows) / 2 },
-		40, 1), image.size());
+	//cv::warpAffine(image, drawable, cv::getRotationMatrix2D({ static_cast<float>(image.cols) / 2, static_cast<float>(image.rows) / 2 },
+	//	40, 1), image.size());
 
 	cv::Mat warp = cv::Mat::eye(3, 3, CV_32F);
-	cv::Point2f persp_src[] { {0, 0}, {1, 1}, {2, 2}, {10, 100}};
-	cv::Point2f persp_dst[] { {4, 0}, {2, 1}, {11, 2}, {100, 10} };
+	cv::Point2f persp_src[] { {0, 0},
+							{static_cast<float>(image.cols - 1), 0},
+							{0, static_cast<float>(image.rows - 1)},
+							{static_cast<float>(image.cols - 1), static_cast<float>(image.rows - 1)}};
+	cv::Point2f persp_dst[]{ {100, 100},
+							{static_cast<float>(image.cols - 1), 0},
+							{0, static_cast<float>(image.rows - 1)},
+							{static_cast<float>(image.cols - 1), static_cast<float>(image.rows - 1)} };
 	warp = cv::getPerspectiveTransform(persp_src, persp_dst);
 	
 	cv::warpPerspective(drawable, drawable, warp, image.size(), cv::INTER_LINEAR);
-	cv::imshow("drawable", drawable);
+	cv::imshow("drawable", image);
 
+	cv::Mat copy_unwarped = image.clone();
+	//cv::imshow("image", image);
 	
 	int maxCorners = thresh;
 	std::vector<cv::Point2f> corners;
@@ -74,6 +82,8 @@ inline void shi_tomasi_subroutine(int, void*)
 		gradientSize,
 		useHarrisDetector,
 		k);
+
+
 	std::cout << "** Number of corners detected: " << corners.size() << std::endl;
 	int radius = 4;
 	for (size_t i = 0; i < corners.size(); i++)
@@ -81,6 +91,23 @@ inline void shi_tomasi_subroutine(int, void*)
 		circle(copy, corners[i], radius, cv::Scalar(0, 0, 255), cv::FILLED);
 	}
 	imshow("image", copy);
+
+	goodFeaturesToTrack(copy_unwarped,
+		corners,
+		maxCorners,
+		qualityLevel,
+		minDistance,
+		cv::Mat(),
+		blockSize,
+		gradientSize,
+		useHarrisDetector,
+		k);
+
+	for (size_t i = 0; i < corners.size(); i++)
+	{
+		circle(copy_unwarped, corners[i], radius, cv::Scalar(0, 0, 255), cv::FILLED);
+	}
+	imshow("drawable", copy_unwarped);
 }
 
 class Task13 :
@@ -93,9 +120,9 @@ public:
 	{
 
 		cv::namedWindow("image");
-		cv::createTrackbar("Threshold: ", "image", &thresh, 1000, shi_tomasi_subroutine);
+		cv::createTrackbar("Threshold: ", "image", &thresh, 1000, shi_tomashi_subroutine);
 
-		shi_tomasi_subroutine(0, 0);
+		shi_tomashi_subroutine(0, 0);
 
 		cv::waitKey(0);
 	}
