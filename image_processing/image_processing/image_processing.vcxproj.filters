@@ -86,5 +86,14 @@
     <ClInclude Include="Task13.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Task13_b.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task15.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
