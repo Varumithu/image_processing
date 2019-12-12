@@ -26,12 +26,13 @@
 #include "Task13.h"
 #include "Task13_b.h"
 #include "Task15.h"
+#include "Task16.h"
 
 
 int main()
 {
 	
-	const auto task = std::make_unique<Task15>();
+	const auto task = std::make_unique<Task16>();
 
 	task->run();
 	

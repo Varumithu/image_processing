@@ -20,7 +20,7 @@ inline void Task15::run() const
 
 	cv::Ptr<cv::BackgroundSubtractor> pBackSub;
 	
-	pBackSub = cv::createBackgroundSubtractorMOG2();
+	pBackSub = cv::createBackgroundSubtractorKNN();
 
 	cv::VideoCapture capture("../vtest.avi");
 	cv::Mat test;
