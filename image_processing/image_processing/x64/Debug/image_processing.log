@@ -4,4 +4,6 @@ C:\Users\Valmit\source\repos\image_processing\image_processing\Task07.h(37,16): 
 C:\Users\Valmit\source\repos\image_processing\image_processing\Task07.h(38,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Valmit\source\repos\image_processing\image_processing\Task07.h(56,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Valmit\source\repos\image_processing\image_processing\Task07.h(58,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Valmit\source\repos\image_processing\image_processing\Task13_b.h(17,11): warning C4930: 'cv::Mat output(void)': prototyped function not called (was a variable definition intended?)
+C:\Users\Valmit\source\repos\image_processing\image_processing\Task13_b.h(17,11): warning C4101: 'output': unreferenced local variable
   image_processing.vcxproj -> C:\Users\Valmit\source\repos\image_processing\x64\Debug\image_processing.exe

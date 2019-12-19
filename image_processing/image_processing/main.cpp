@@ -32,7 +32,7 @@
 int main()
 {
 	
-	const auto task = std::make_unique<Task16>();
+	const auto task = std::make_unique<Task13_b>();
 
 	task->run();
 	
