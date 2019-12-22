@@ -34,8 +34,6 @@ void Task04::run() const
 	cv::imshow("w1", graycat); // Show our image inside it.
 	cv::waitKey(0); // Wait for a keystroke in the window
 
-	int scale = 2;
-
 	cv::Mat hist;
 	int hist_size = 256;
 	int channels[] = { 0 };

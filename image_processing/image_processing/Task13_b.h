@@ -11,24 +11,26 @@ public:
 	void run() const override
 	{
 		auto orb = cv::ORB::create();
-		cv::Mat img1 = imread("../building.jpg", cv::IMREAD_GRAYSCALE);
-		cv::Mat img2 = cv::Mat::zeros(img1.size(), img1.type());
+		cv::Mat img1 = imread("../notre1.jpg", cv::IMREAD_GRAYSCALE);
+		//cv::Mat img2 = cv::Mat::zeros(img1.size(), img1.type());
 
-		cv::Mat output();
+		//cv::Mat output();
+		//
+		//cv::Mat warp = cv::Mat::eye(3, 3, CV_32F);
+		//cv::Point2f persp_src[]{ {0, 0},
+		//						{static_cast<float>(img1.cols - 1), 0},
+		//						{0, static_cast<float>(img1.rows - 1)},
+		//						{static_cast<float>(img1.cols - 1), static_cast<float>(img1.rows - 1)} };
+		//cv::Point2f persp_dst[]{ {100, 100},
+		//						{static_cast<float>(img1.cols - 1), 0},
+		//						{0, static_cast<float>(img1.rows - 1)},
+		//						{static_cast<float>(img1.cols - 1), static_cast<float>(img1.rows - 1)} };
+		//warp = cv::getPerspectiveTransform(persp_src, persp_dst);
+
+		//cv::warpPerspective(img1, img2, warp, img1.size(), cv::INTER_LINEAR);
+
+		cv::Mat img2 = imread("../notre2.jpg", cv::IMREAD_GRAYSCALE);
 		
-		cv::Mat warp = cv::Mat::eye(3, 3, CV_32F);
-		cv::Point2f persp_src[]{ {0, 0},
-								{static_cast<float>(img1.cols - 1), 0},
-								{0, static_cast<float>(img1.rows - 1)},
-								{static_cast<float>(img1.cols - 1), static_cast<float>(img1.rows - 1)} };
-		cv::Point2f persp_dst[]{ {100, 100},
-								{static_cast<float>(img1.cols - 1), 0},
-								{0, static_cast<float>(img1.rows - 1)},
-								{static_cast<float>(img1.cols - 1), static_cast<float>(img1.rows - 1)} };
-		warp = cv::getPerspectiveTransform(persp_src, persp_dst);
-
-		cv::warpPerspective(img1, img2, warp, img1.size(), cv::INTER_LINEAR);
-
 		//# find the keypointsand descriptors with ORB
 		//	kp1, des1 = orb.detectAndCompute(img1, None)
 		//	kp2, des2 = orb.detectAndCompute(img2, None)
@@ -49,7 +51,7 @@ public:
 		img3 = cv.drawMatches(img1, kp1, img2, kp2, matches[:10], None, flags = cv.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)
 		plt.imshow(img3), plt.show()*/
 
-		std::sort(matches.begin(), matches.end(), [](cv::DMatch a, cv::DMatch b) { return a.distance < b.distance; });
+		std::sort(matches.begin(), matches.end(), [](cv::DMatch& a, cv::DMatch& b) { return a.distance < b.distance; });
 		auto N = 50;
 		std::vector<cv::DMatch> matches_first_N;
 		for (size_t i = 0; i < N; ++i)
